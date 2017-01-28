@@ -1,5 +1,5 @@
 
-function count(context) {
+function countChars(context) {
 	
 	var app = NSApplication.sharedApplication(),
 		text = context.selection.firstObject(),

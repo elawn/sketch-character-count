@@ -1,24 +1,32 @@
 {
-	"name": "Character Count",
-	"description": "Sketch plugin to count the number of characters in a text layer",
-	"author": "Andrew Fiorillo",
-	"homepage": "http://github.com/andrewfiorillo/sketch-character-count",
-	"version": "1.0",
-	"identifier": "com.andrewfiorillo.sketch.sketch-character-count",
-	"compatibleVersion": "3",
-	"bundleVersion": "1",
-	"commands": [
-		{
-			"name": "Count",
-			"identifier": "count",
-			"shortcut": "",
-			"script": "count.js",
-			"handler": "count"
-		}
-	],
-	"menu": {
-		"items": [
-			"count"
-		]
-	}
+    "name": "Character and Word Count",
+    "description": "Sketch plugin to count the number of characters or words in a text layer",
+    "author": "Elan Bartholomew",
+    "homepage": "http://github.com/elawn/sketch-character-count",
+    "version": "1.0",
+    "identifier": "com.elawn.sketch.sketch-character-count",
+    "compatibleVersion": "3",
+    "bundleVersion": "1",
+    "commands": [
+        {
+            "name": "Count Characters",
+            "identifier": "countChars",
+            "shortcut": "ctrl cmd c",
+            "script": "charCount.js",
+            "handler": "countChars"
+        },
+        {
+            "name": "Count Words",
+            "identifier": "countWords",
+            "shortcut": "ctrl cmd w",
+            "script": "wordCount.js",
+            "handler": "countWords"
+        }
+    ],
+    "menu": {
+        "items": [
+            "countChars",
+            "countWords"
+        ]
+    }
 }
